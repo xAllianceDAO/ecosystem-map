@@ -1,5 +1,6 @@
 import Category from '@/components/Category.tsx';
 import Footer from '@/components/Footer.tsx';
+import { FormCallToAction } from '@/components/FormCallToAction.tsx';
 import AnimatedGalaxy from '@/components/Galaxy.tsx';
 import Masonry from '@/components/Masonry';
 import OfficialCategory from '@/components/OfficialCategory.tsx';
@@ -50,6 +51,7 @@ function App() {
             <div className={'position-fixed z-0 top-0 end-0 bottom-0 start-0 pe-none'}>
                 <AnimatedGalaxy />
             </div>
+            <FormCallToAction />
         </>
     );
 }
