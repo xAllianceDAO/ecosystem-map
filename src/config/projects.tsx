@@ -11,13 +11,13 @@ export const projects: ProjectType[] = [
         category: 'official',
         name: 'xExchange',
         url: 'https://xexchange.com/',
-        icon: null,
+        icon: 'xexchange.svg',
     },
     {
         category: 'official',
         name: 'xLaunchpad',
         url: 'https://xlaunchpad.com/',
-        icon: null,
+        icon: 'xlaunchpad.svg',
     },
     {
         category: 'official',
@@ -35,19 +35,19 @@ export const projects: ProjectType[] = [
         category: 'official',
         name: 'MultiversX Wallet',
         url: 'https://wallet.multiversx.com/',
-        icon: null,
+        icon: 'multiversx.svg',
     },
     {
         category: 'official',
         name: 'MultiversX Explorer',
         url: 'https://explorer.multiversx.com/',
-        icon: null,
+        icon: 'multiversx.svg',
     },
     {
         category: 'official',
         name: 'xAlliance',
         url: 'https://xalliance.io/',
-        icon: null,
+        icon: '/logos/xalliance.png',
     },
     {
         category: 'official',
@@ -59,7 +59,7 @@ export const projects: ProjectType[] = [
         category: 'marketplace',
         name: 'XOXNO',
         url: 'https://xoxno.com/',
-        icon: null,
+        icon: 'xoxno.svg',
     },
     {
         category: 'marketplace',
@@ -71,7 +71,7 @@ export const projects: ProjectType[] = [
         category: 'marketplace',
         name: 'Flipix',
         url: 'https://flipix.io/',
-        icon: null,
+        icon: 'flipix.svg',
     },
     {
         category: 'marketplace',
@@ -83,7 +83,7 @@ export const projects: ProjectType[] = [
         category: 'marketplace',
         name: 'Rug Royalties',
         url: 'https://rug.divergentclub.xyz/',
-        icon: null,
+        icon: 'rugroyalties.svg',
     },
     {
         category: 'marketplace',
@@ -95,31 +95,31 @@ export const projects: ProjectType[] = [
         category: 'defi',
         name: 'Hatom',
         url: 'https://www.hatom.com/',
-        icon: null,
+        icon: 'hatom.svg',
     },
     {
         category: 'defi',
         name: 'AshSwap',
         url: 'https://ashswap.io/',
-        icon: null,
+        icon: 'ashswap.svg',
     },
     {
         category: 'defi',
         name: 'OneDex',
         url: 'https://onedex.app/',
-        icon: null,
+        icon: 'onedex.svg',
     },
     {
         category: 'defi',
         name: 'Pulsar Money',
         url: 'https://pulsar.money/',
-        icon: null,
+        icon: 'pulsarmoney.svg',
     },
     {
         category: 'defi',
         name: 'JEX',
         url: 'https://app.jexchange.io/',
-        icon: null,
+        icon: 'jexchange.svg',
     },
     {
         category: 'defi',
@@ -131,7 +131,7 @@ export const projects: ProjectType[] = [
         category: 'defi',
         name: 'AshPerp',
         url: 'https://ashperp.trade/',
-        icon: null,
+        icon: 'ashperp.svg',
     },
     {
         category: 'defi',
@@ -173,7 +173,7 @@ export const projects: ProjectType[] = [
         category: 'defi',
         name: 'Burnify',
         url: 'https://burnify.app/',
-        icon: null,
+        icon: 'burnify.svg',
     },
     {
         category: 'defi',
@@ -191,7 +191,7 @@ export const projects: ProjectType[] = [
         category: 'defi',
         name: 'FunDex',
         url: 'https://fundex.fun/',
-        icon: null,
+        icon: 'FunDex.svg',
     },
     {
         category: 'gaming',
@@ -209,7 +209,7 @@ export const projects: ProjectType[] = [
         category: 'gaming',
         name: 'Knights of Cathena',
         url: 'https://knights-of-cathena.com/',
-        icon: null,
+        icon: 'knightsofcathena.svg',
     },
     {
         category: 'gaming',
@@ -269,7 +269,7 @@ export const projects: ProjectType[] = [
         category: 'tool',
         name: 'e-Compass',
         url: 'https://e-compass.io/',
-        icon: null,
+        icon: 'ecompass.svg',
     },
     {
         category: 'tool',
@@ -281,7 +281,7 @@ export const projects: ProjectType[] = [
         category: 'tool',
         name: 'PeerMe',
         url: 'https://peerme.io/',
-        icon: null,
+        icon: 'peerme.svg',
     },
     {
         category: 'tool',
@@ -317,7 +317,7 @@ export const projects: ProjectType[] = [
         category: 'tool',
         name: 'EDGE',
         url: 'https://projectx.mx/',
-        icon: null,
+        icon: 'projectx-edge-sniper.svg',
     },
     {
         category: 'tool',
@@ -365,7 +365,7 @@ export const projects: ProjectType[] = [
         category: 'tool',
         name: 'Tagrity',
         url: 'https://tagrity.io/',
-        icon: null,
+        icon: 'tagrity.svg',
     },
     {
         category: 'tool',
@@ -413,7 +413,7 @@ export const projects: ProjectType[] = [
         category: 'nft',
         name: 'Boogas',
         url: 'https://boogas.io/',
-        icon: null,
+        icon: 'boogasofficial.svg',
     },
     {
         category: 'nft',
@@ -461,7 +461,7 @@ export const projects: ProjectType[] = [
         category: 'nft',
         name: 'Divergent Club',
         url: 'https://divergentclub.framer.website/',
-        icon: null,
+        icon: 'divergentclub.svg',
     },
     {
         category: 'nft',
