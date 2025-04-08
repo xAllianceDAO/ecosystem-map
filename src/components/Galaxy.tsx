@@ -6,8 +6,8 @@ import { AdditiveBlending, BufferAttribute, Color, MathUtils, Mesh, Points, Vect
 
 function Galaxy({ dof }: { dof: RefObject<DepthOfFieldEffect | null> }) {
     const parameters = {
-        count: 100000,
-        size: 0.01,
+        count: 10000,
+        size: 0.025,
         radius: 5,
         branches: 5,
         spin: 1.25,
@@ -26,7 +26,6 @@ function Galaxy({ dof }: { dof: RefObject<DepthOfFieldEffect | null> }) {
         focusY: 0,
         focusZ: 0,
     };
-
     const particles = useRef<Points>(null);
 
     useEffect(() => {
@@ -114,8 +113,8 @@ function Nucleus({ size }: { size: number }) {
 
     return (
         <mesh ref={nucleusRef} position={[0, 0, 0]} scale={[size, size, size]}>
-            <sphereGeometry attach="geometry" args={[0.5, 32, 32, 0, 6.4, 0, 6.3]} />
-            <meshBasicMaterial attach="material" color={'#fff'} />
+            <sphereGeometry attach={'geometry'} args={[0.5, 32, 32, 0, 6.4, 0, 6.3]} />
+            <meshBasicMaterial attach={'material'} color={'#fff'} />
         </mesh>
     );
 }
