@@ -1,0 +1,49 @@
+{
+  "name": "mvx-ecosystem-map",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@react-three/fiber": "^9.1.2",
+    "@react-three/postprocessing": "^3.0.4",
+    "bootstrap": "^5.3.5",
+    "moment": "^2.30.1",
+    "react": "^19.1.0",
+    "react-bootstrap": "^2.10.9",
+    "react-dom": "^19.1.0",
+    "react-masonry-component": "^6.3.0",
+    "three": "^0.175.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.21.0",
+    "@types/bootstrap": "^5.2.10",
+    "@types/node": "^22.14.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.1",
+    "@types/three": "^0.175.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "eslint": "^9.24.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "globals": "^16.0.0",
+    "sass": "1.77.6",
+    "sharp": "^0.34.1",
+    "svgo": "^3.3.2",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.29.1",
+    "vite": "^6.2.5",
+    "vite-imagetools": "^7.0.5",
+    "vite-plugin-image-optimizer": "^1.1.8"
+  },
+  "overrides": {
+    "react-masonry-component": {
+      "react": "^19.0.0"
+    }
+  }
+}
