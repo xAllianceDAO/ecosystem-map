@@ -5,7 +5,7 @@ export const projects: ProjectType[] = [
         category: 'official',
         name: 'xPortal',
         url: 'https://xportal.com',
-        icon: null,
+        icon: 'xportal.svg',
     },
     {
         category: 'official',

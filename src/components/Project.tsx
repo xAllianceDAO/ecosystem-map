@@ -6,6 +6,16 @@ type ProjectProps = {
 }
 
 export default function Project({ project }: ProjectProps) {
+    let logo = null;
+
+    if (project.icon) {
+        if (project.icon.startsWith('/') || project.icon?.startsWith('https://')) {
+            logo = project.icon;
+        } else {
+            logo = `https://raw.githubusercontent.com/multiversx/mx-assets/master/accounts/icons/${project.icon}`;
+        }
+    }
+
     return (
         <OverlayTrigger
             placement={'bottom'}
@@ -21,9 +31,9 @@ export default function Project({ project }: ProjectProps) {
                 target={'_blank'}
                 aria-label={`Open ${project.name}`}
             >
-                {project.icon
+                {logo
                     //? <Image src={`/logos/${project.icon}`} alt={project.name} />
-                    ? <Image src={project.icon} alt={project.name} />
+                    ? <Image src={logo} alt={project.name} />
                     : project.name
                 }
             </a>
