@@ -6,7 +6,7 @@ import { AdditiveBlending, BufferAttribute, Color, MathUtils, Mesh, Points, Vect
 
 function Galaxy({ dof }: { dof: RefObject<DepthOfFieldEffect | null> }) {
     const parameters = {
-        count: 10000,
+        count: 2500,
         size: 0.025,
         radius: 5,
         branches: 5,
