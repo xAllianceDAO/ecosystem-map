@@ -1,3 +1,4 @@
+import ProjectInitials from '@/components/ProjectInitials.tsx';
 import { ProjectType } from '@/types/project';
 import { Image, OverlayTrigger, Tooltip } from 'react-bootstrap';
 
@@ -34,7 +35,7 @@ export default function Project({ project }: ProjectProps) {
                 {logo
                     //? <Image src={`/logos/${project.icon}`} alt={project.name} />
                     ? <Image src={logo} alt={project.name} />
-                    : project.name
+                    : <ProjectInitials project={project} />
                 }
             </a>
         </OverlayTrigger>

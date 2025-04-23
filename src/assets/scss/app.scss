@@ -43,15 +43,26 @@ $background-blur: 8px;
   }
 }
 
-.official-projects {
-  img {
-    height: 3em;
-  }
-}
+.official-projects, .projects {
+  $icon-size: 3em;
 
-.projects {
+  a {
+    @extend .text-decoration-none;
+  }
+
   img {
-    height: 3em;
+    height: $icon-size;
+  }
+
+  .initials {
+    @extend .d-flex;
+    @extend .justify-content-center;
+    @extend .align-items-center;
+    @extend .border;
+    @extend .rounded-circle;
+    @extend .fw-bold;
+    width: $icon-size;
+    height: $icon-size;
   }
 }
 
