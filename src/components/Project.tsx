@@ -21,6 +21,7 @@ export default function Project({ project }: ProjectProps) {
         <OverlayTrigger
             placement={'bottom'}
             offset={[0, 16]}
+            trigger={['hover']}
             overlay={
                 <Tooltip>
                     {project.name}
