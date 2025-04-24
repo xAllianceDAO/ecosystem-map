@@ -41,8 +41,23 @@ export function FormCallToAction({ onToggleLogos, onToggleAnimation, showLogos, 
             element.style.position = 'relative';
             element.style.top = `-${scrollY}px`;
 
+            // Attendre que toutes les images soient chargées
+            const images = Array.from(element.getElementsByTagName('img'));
+            await Promise.all(images.map(img => {
+                if (img.complete) return Promise.resolve();
+                return new Promise((resolve, reject) => {
+                    img.onload = resolve;
+                    img.onerror = reject;
+                });
+            }));
+
+            // Définir crossOrigin sur toutes les images
+            images.forEach((img: HTMLImageElement) => {
+                img.crossOrigin = 'anonymous';
+            });
+
             const canvas = await html2canvas(element, {
-                logging: false,
+                logging: true,
                 allowTaint: true,
                 useCORS: true,
                 height: Math.max(
@@ -66,10 +81,11 @@ export function FormCallToAction({ onToggleLogos, onToggleAnimation, showLogos, 
             const fileName = `xAlliance - Ecosystem Map - ${moment().format('YYYY-MM-DD HH:mm')}`;
             const link = document.createElement('a');
             link.download = `${fileName}.png`;
-            link.href = canvas.toDataURL('image/png');
+            link.href = canvas.toDataURL('image/png', 1.0); // Qualité maximale
             link.click();
         } catch (error) {
             console.error('Export failed:', error);
+            alert('Une erreur est survenue lors de l\'export. Veuillez réessayer.');
         }
         setIsExporting(false);
     };
