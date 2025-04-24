@@ -17,6 +17,7 @@
     "@react-three/postprocessing": "^3.0.4",
     "@types/html2canvas": "^0.5.35",
     "bootstrap": "^5.3.5",
+    "framer-motion": "^12.9.0",
     "html2canvas": "^1.4.1",
     "moment": "^2.30.1",
     "react": "^19.1.0",

@@ -71,8 +71,8 @@ function App() {
                     </Col>
                 </Row>
                 <Masonry ref={masonry} options={masonryOptions} className={'position-relative'}>
-                    {categories.map(category => (
-                        <Category key={category.id} category={category} showLogo={showLogos} />
+                    {categories.map((category, index) => (
+                        <Category key={category.id} category={category} showLogo={showLogos} index={index} />
                     ))}
                 </Masonry>
             </Container>
