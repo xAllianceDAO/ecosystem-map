@@ -6,12 +6,19 @@ import Masonry from '@/components/Masonry';
 import OfficialCategory from '@/components/OfficialCategory.tsx';
 import { categories } from '@/config/categories.tsx';
 import { MasonryInstance } from '@/types/masonry';
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import Logo from './components/Logo.tsx';
 
 function App() {
     const masonry = useRef<MasonryInstance | null>(null);
+    const [showLogos, setShowLogos] = useState(true);
+    const [showAnimation, setShowAnimation] = useState(() => {
+        // Détection mobile basée sur la largeur d'écran
+        const isMobile = window.innerWidth <= 768;
+        return !isMobile;
+    });
+    
     const masonryOptions = {
         transitionDuration: 0,
     };
@@ -30,6 +37,28 @@ function App() {
         return () => window.removeEventListener('resize', redrawMasonry);
     }, []);
 
+    useEffect(() => {
+        const handleResize = () => {
+            const isMobile = window.innerWidth <= 768;
+            setShowAnimation(!isMobile);
+        };
+
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
+    const handleToggleLogos = () => {
+        setShowLogos(!showLogos);
+        // Redraw masonry after state change
+        setTimeout(() => {
+            masonry.current?.masonry.layout();
+        }, 0);
+    };
+
+    const handleToggleAnimation = () => {
+        setShowAnimation(!showAnimation);
+    };
+
     return (
         <>
             <Container fluid className={'position-relative z-1 p-md-5'}>
@@ -38,20 +67,27 @@ function App() {
                         <Logo />
                     </Col>
                     <Col xs={12} md className={'mb-4 mb-md-0'}>
-                        <OfficialCategory />
+                        <OfficialCategory showLogo={showLogos} />
                     </Col>
                 </Row>
                 <Masonry ref={masonry} options={masonryOptions} className={'position-relative'}>
                     {categories.map(category => (
-                        <Category key={category.id} category={category} />
+                        <Category key={category.id} category={category} showLogo={showLogos} />
                     ))}
                 </Masonry>
             </Container>
             <Footer />
-            <div className={'position-fixed z-0 top-0 end-0 bottom-0 start-0 pe-none'}>
-                <AnimatedGalaxy />
-            </div>
-            <FormCallToAction />
+            {showAnimation && (
+                <div className={'position-fixed z-0 top-0 end-0 bottom-0 start-0 pe-none'}>
+                    <AnimatedGalaxy />
+                </div>
+            )}
+            <FormCallToAction 
+                onToggleLogos={handleToggleLogos}
+                onToggleAnimation={handleToggleAnimation}
+                showLogos={showLogos}
+                showAnimation={showAnimation}
+            />
         </>
     );
 }

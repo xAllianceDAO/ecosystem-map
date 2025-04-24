@@ -8,4 +8,5 @@ export interface ProjectType {
     name: string;
     url: string | null;
     icon: string | null;
+    description?: string;
 }

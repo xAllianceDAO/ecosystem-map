@@ -2,7 +2,11 @@ import Project from '@/components/Project.tsx';
 import { projects } from '@/config/projects.tsx';
 import { Card, Col, Row } from 'react-bootstrap';
 
-export default function OfficialCategory() {
+type OfficialCategoryProps = {
+    showLogo: boolean;
+}
+
+export default function OfficialCategory({ showLogo }: OfficialCategoryProps) {
     return (
         <Card>
             <Card.Body className={'official-projects'}>
@@ -11,7 +15,7 @@ export default function OfficialCategory() {
                         .filter((project) => project.category === 'official')
                         .map((project, index) => (
                             <Col key={index} xs={'auto'}>
-                                <Project project={project} />
+                                <Project project={project} showLogo={showLogo} />
                             </Col>
                         ))
                     }

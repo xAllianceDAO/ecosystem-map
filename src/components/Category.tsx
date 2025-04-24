@@ -5,10 +5,11 @@ import { useMemo } from 'react';
 import { Card, Col, Row } from 'react-bootstrap';
 
 type CategoryProps = {
-    category: CategoryType,
+    category: CategoryType;
+    showLogo: boolean;
 }
 
-export default function Category({ category }: CategoryProps) {
+export default function Category({ category, showLogo }: CategoryProps) {
     const categoryProjects = useMemo(() => projects.filter(project => project.category === category.id), [category.id]);
     let sizes = 'w-100 w-md-50 w-lg-33';
 
@@ -26,7 +27,7 @@ export default function Category({ category }: CategoryProps) {
                     <Row className={'justify-content-center align-items-center g-4'}>
                         {categoryProjects.map((project, index) => (
                             <Col key={index} xs={'auto'}>
-                                <Project project={project} />
+                                <Project project={project} showLogo={showLogo} />
                             </Col>
                         ))}
                     </Row>
