@@ -4,7 +4,6 @@ import { FormCallToAction } from '@/components/FormCallToAction.tsx';
 import AnimatedGalaxy from '@/components/Galaxy.tsx';
 import Masonry from '@/components/Masonry';
 import OfficialCategory from '@/components/OfficialCategory.tsx';
-import Stats from '@/components/Stats.tsx';
 import { categories } from '@/config/categories.tsx';
 import { useDeviceDetection } from '@/hooks/useDeviceDetection';
 import { MasonryInstance } from '@/types/masonry';
