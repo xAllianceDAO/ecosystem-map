@@ -4,16 +4,22 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useRef, useState } from 'react';
 import html2canvas from 'html2canvas';
 import moment from 'moment';
-import './FormCallToAction.scss';
 
 interface FormCallToActionProps {
     onToggleLogos: () => void;
     onToggleAnimation: () => void;
     showLogos: boolean;
     showAnimation: boolean;
+    isToggleLogosLoading?: boolean;
 }
 
-export function FormCallToAction({ onToggleLogos, onToggleAnimation, showLogos, showAnimation }: FormCallToActionProps) {
+export function FormCallToAction({ 
+    onToggleLogos, 
+    onToggleAnimation, 
+    showLogos, 
+    showAnimation, 
+    isToggleLogosLoading = false 
+}: FormCallToActionProps) {
     const menuRef = useRef<HTMLDivElement>(null);
     const [isExporting, setIsExporting] = useState(false);
     const [isOpen, setIsOpen] = useState(false);
@@ -21,7 +27,7 @@ export function FormCallToAction({ onToggleLogos, onToggleAnimation, showLogos, 
     const handleExportPNG = async () => {
         setIsExporting(true);
         try {
-            // Cacher temporairement le menu pour la capture
+            // Temporarily hide the menu for capture
             if (menuRef.current) {
                 menuRef.current.style.display = 'none';
             }
@@ -29,19 +35,19 @@ export function FormCallToAction({ onToggleLogos, onToggleAnimation, showLogos, 
             const element = document.body;
             const scrollY = window.scrollY;
             
-            // Sauvegarder les dimensions originales
+            // Save original dimensions
             const originalWidth = element.style.width;
             const originalHeight = element.style.height;
             const originalPosition = element.style.position;
             const originalTop = element.style.top;
 
-            // Ajuster le body pour la capture complète
+            // Adjust the body for complete capture
             element.style.width = '100%';
             element.style.height = 'auto';
             element.style.position = 'relative';
             element.style.top = `-${scrollY}px`;
 
-            // Attendre que toutes les images soient chargées
+            // Wait for all images to load
             const images = Array.from(element.getElementsByTagName('img'));
             await Promise.all(images.map(img => {
                 if (img.complete) return Promise.resolve();
@@ -51,7 +57,7 @@ export function FormCallToAction({ onToggleLogos, onToggleAnimation, showLogos, 
                 });
             }));
 
-            // Définir crossOrigin sur toutes les images
+            // Set crossOrigin on all images
             images.forEach((img: HTMLImageElement) => {
                 img.crossOrigin = 'anonymous';
             });
@@ -67,13 +73,13 @@ export function FormCallToAction({ onToggleLogos, onToggleAnimation, showLogos, 
                 )
             });
             
-            // Restaurer les dimensions originales
+            // Restore original dimensions
             element.style.width = originalWidth;
             element.style.height = originalHeight;
             element.style.position = originalPosition;
             element.style.top = originalTop;
 
-            // Restaurer l'affichage du menu
+            // Restore menu display
             if (menuRef.current) {
                 menuRef.current.style.display = '';
             }
@@ -81,11 +87,11 @@ export function FormCallToAction({ onToggleLogos, onToggleAnimation, showLogos, 
             const fileName = `xAlliance - Ecosystem Map - ${moment().format('YYYY-MM-DD HH:mm')}`;
             const link = document.createElement('a');
             link.download = `${fileName}.png`;
-            link.href = canvas.toDataURL('image/png', 1.0); // Qualité maximale
+            link.href = canvas.toDataURL('image/png', 1.0); // Maximum quality
             link.click();
         } catch (error) {
             console.error('Export failed:', error);
-            alert('Une erreur est survenue lors de l\'export. Veuillez réessayer.');
+            alert('An error occurred during export. Please try again.');
         }
         setIsExporting(false);
     };
@@ -121,7 +127,8 @@ export function FormCallToAction({ onToggleLogos, onToggleAnimation, showLogos, 
 
                 <div 
                     className={'control-item'} 
-                    onClick={handleExportPNG}
+                    onClick={isExporting ? undefined : handleExportPNG}
+                    style={{ opacity: isExporting ? 0.5 : 1 }}
                 >
                     <FontAwesomeIcon icon={isExporting ? faSpinner : faCamera} className={isExporting ? 'fa-spin' : ''} />
                     <span>Export as PNG</span>
@@ -129,9 +136,10 @@ export function FormCallToAction({ onToggleLogos, onToggleAnimation, showLogos, 
 
                 <div 
                     className={'control-item'} 
-                    onClick={onToggleLogos}
+                    onClick={isToggleLogosLoading ? undefined : onToggleLogos}
+                    style={{ opacity: isToggleLogosLoading ? 0.5 : 1 }}
                 >
-                    <FontAwesomeIcon icon={showLogos ? faImage : faFont} />
+                    <FontAwesomeIcon icon={isToggleLogosLoading ? faSpinner : (showLogos ? faImage : faFont)} className={isToggleLogosLoading ? 'fa-spin' : ''} />
                     <span>{showLogos ? 'Show Names' : 'Show Logos'}</span>
                 </div>
 

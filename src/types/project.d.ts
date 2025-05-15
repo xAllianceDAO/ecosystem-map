@@ -9,4 +9,5 @@ export interface ProjectType {
     url: string | null;
     icon: string | null;
     description?: string;
+    challengeWon?: boolean;
 }

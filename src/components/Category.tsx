@@ -13,19 +13,19 @@ type CategoryProps = {
 
 const getRandomDirection = () => {
     const directions = [
-        { x: -100, y: 0 },    // gauche
-        { x: 100, y: 0 },     // droite
-        { x: 0, y: -100 },    // haut
-        { x: 0, y: 100 },     // bas
-        { x: -100, y: -100 }, // haut-gauche
-        { x: 100, y: -100 },  // haut-droite
-        { x: -100, y: 100 },  // bas-gauche
-        { x: 100, y: 100 }    // bas-droite
+        { x: -100, y: 0 },    // left
+        { x: 100, y: 0 },     // right
+        { x: 0, y: -100 },    // top
+        { x: 0, y: 100 },     // bottom
+        { x: -100, y: -100 }, // top-left
+        { x: 100, y: -100 },  // top-right
+        { x: -100, y: 100 },  // bottom-left
+        { x: 100, y: 100 }    // bottom-right
     ];
     return directions[Math.floor(Math.random() * directions.length)];
 };
 
-// Fonction pour créer un tableau d'indices mélangés
+// Function to create a shuffled array of indices
 const getShuffledIndices = (length: number) => {
     const indices = Array.from({ length }, (_, i) => i);
     for (let i = indices.length - 1; i > 0; i--) {

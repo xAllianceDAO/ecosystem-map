@@ -1,6 +1,8 @@
 @import "fonts";
 @import "variables";
 @import "bootstrap/scss/bootstrap";
+@import "project";
+@import "form-call-to-action";
 
 $background-blur: 8px;
 
@@ -74,19 +76,7 @@ footer {
   backdrop-filter: blur($background-blur);
 }
 
-#form-cta {
-  $offset-x: -11.1em;
-  $animation-margin: 20px;
-
-  padding-right: $animation-margin;
-  bottom: 50px;
-  right: calc(#{$offset-x} - #{$animation-margin});
-  transition: right 150ms cubic-bezier(0.680, 0, 0.265, 1.550);
-
-  &.active {
-    right: -$animation-margin;
-  }
-}
+// Styles for #form-cta are defined in _form-call-to-action.scss
 
 @include media-breakpoint-up(md) {
   .w-md-50 {

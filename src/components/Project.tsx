@@ -3,7 +3,6 @@ import { ProjectType } from '@/types/project';
 import { Image, OverlayTrigger, Tooltip } from 'react-bootstrap';
 import { motion, useAnimation } from 'framer-motion';
 import { useEffect, useState, useMemo } from 'react';
-import './Project.scss';
 
 type ProjectProps = {
     project: ProjectType;
@@ -14,14 +13,14 @@ type ProjectProps = {
 }
 
 const calculateBaseDelay = (projectIndex: number, totalProjects: number) => {
-    // Ajuster les intervalles selon le nombre de projets
+    // Adjust intervals based on number of projects
     let baseInterval;
     if (totalProjects > 20) {
-        baseInterval = 0.03; // Très rapide pour les grandes catégories
+        baseInterval = 0.03; // Very fast for large categories
     } else if (totalProjects > 10) {
-        baseInterval = 0.05; // Moyennement rapide
+        baseInterval = 0.05; // Medium speed
     } else {
-        baseInterval = 0.08; // Plus lent pour les petites catégories
+        baseInterval = 0.08; // Slower for small categories
     }
     return projectIndex * baseInterval;
 };
@@ -35,19 +34,20 @@ export default function Project({
 }: ProjectProps) {
     const controls = useAnimation();
     const [isLoaded, setIsLoaded] = useState(false);
+    const [hasError, setHasError] = useState(false);
     let logo = null;
 
-    // Générer un délai aléatoire unique pour ce projet
+    // Generate a unique random delay for this project
     const randomDelay = useMemo(() => {
         const baseDelay = calculateBaseDelay(projectIndex, totalProjects);
-        // Ajuster la variation aléatoire selon le nombre de projets
+        // Adjust random variation based on number of projects
         let maxJitter;
         if (totalProjects > 20) {
-            maxJitter = 0.02; // Petite variation pour les grandes catégories
+            maxJitter = 0.02; // Small variation for large categories
         } else if (totalProjects > 10) {
-            maxJitter = 0.04; // Variation moyenne
+            maxJitter = 0.04; // Medium variation
         } else {
-            maxJitter = 0.06; // Plus grande variation pour les petites catégories
+            maxJitter = 0.06; // Larger variation for small categories
         }
         const jitter = Math.random() * maxJitter * 2 - maxJitter;
         return baseDelay + jitter;
@@ -61,8 +61,18 @@ export default function Project({
         }
     }
 
+    // Reset states when showLogo changes
     useEffect(() => {
-        if (isLoaded && canAnimate) {
+        setIsLoaded(false);
+        setHasError(false);
+    }, [showLogo]);
+
+    useEffect(() => {
+        // Start animation when:
+        // 1. Image is loaded successfully, or
+        // 2. We have an error (need to show fallback), or
+        // 3. No logo to load (just show initials)
+        if ((isLoaded || hasError || !logo) && canAnimate) {
             controls.start({
                 scale: 1,
                 opacity: 1,
@@ -74,10 +84,14 @@ export default function Project({
                 }
             });
         }
-    }, [isLoaded, canAnimate, controls, randomDelay]);
+    }, [isLoaded, hasError, logo, canAnimate, controls, randomDelay]);
 
     const handleImageLoad = () => {
         setIsLoaded(true);
+    };
+
+    const handleImageError = () => {
+        setHasError(true);
     };
 
     const getAnimationProps = () => ({
@@ -95,7 +109,7 @@ export default function Project({
     });
 
     const content = showLogo ? (
-        logo ? (
+        logo && !hasError ? (
             <motion.div
                 initial={{ scale: 0, opacity: 0 }}
                 animate={controls}
@@ -105,6 +119,8 @@ export default function Project({
                     alt={project.name} 
                     className="project-logo" 
                     onLoad={handleImageLoad}
+                    onError={handleImageError}
+                    loading="lazy"
                 />
             </motion.div>
         ) : (
