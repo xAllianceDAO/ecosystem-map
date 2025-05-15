@@ -9,7 +9,11 @@ type CategoryProps = {
 }
 
 export default function Category({ category }: CategoryProps) {
-    const categoryProjects = useMemo(() => projects.filter(project => project.category === category.id), [category.id]);
+    const categoryProjects = useMemo(() => {
+        return projects
+            .filter(project => project.category === category.id)
+            .sort((a, b) => a.name.localeCompare(b.name));
+    }, [category.id]);
     let sizes = 'w-100 w-md-50 w-lg-33';
 
     if (category.id === 'staking') {

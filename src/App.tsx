@@ -41,7 +41,7 @@ function App() {
                         <OfficialCategory />
                     </Col>
                 </Row>
-                <Masonry ref={masonry} options={masonryOptions} className={'position-relative'}>
+                <Masonry ref={masonry} options={masonryOptions} className={'position-relative min-vh-100'}>
                     {categories.map(category => (
                         <Category key={category.id} category={category} />
                     ))}
