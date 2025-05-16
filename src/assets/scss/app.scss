@@ -2,13 +2,26 @@
 @import 'variables';
 @import 'bootstrap/scss/bootstrap';
 
-$background-blur: 8px;
+$background-blur: 5px;
 
 .card {
+    -webkit-backdrop-filter: blur($background-blur);
+    backdrop-filter: blur($background-blur);
+    background: rgb(220 255 231 / 14%);
+    box-shadow: 0 8px 32px 0 rgb(198 253 124 / 22%);
+    backdrop-filter: blur($background-blur);
+    -webkit-backdrop-filter: blur($background-blur);
+    border-radius: 10px;
+    border: 1px solid rgb(255 255 255 / 7%);
     backdrop-filter: blur($background-blur);
 
     .card-header {
         @extend .mb-0;
+        padding: var(--bs-card-cap-padding-y) var(--bs-card-cap-padding-x);
+        margin-bottom: 0;
+        color: var(--bs-card-cap-color);
+        background-color: var(--bs-card-cap-bg);
+        border-bottom: var(--bs-card-border-width) solid rgb(255 255 255 / 17%);
     }
 }
 
@@ -46,6 +59,7 @@ $background-blur: 8px;
         @extend .rounded-circle;
 
         height: $icon-size;
+        border: 1px solid #c6fd7c30;
     }
 
     .initials {
