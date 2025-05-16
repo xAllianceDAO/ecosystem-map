@@ -62,6 +62,12 @@ export const projects: ProjectType[] = [
         icon: 'xoxno.svg',
     },
     {
+        category: 'defi',
+        name: 'XOXNO DeFi',
+        url: 'https://xoxno.com/defi',
+        icon: 'xoxno.svg',
+    },
+    {
         category: 'marketplace',
         name: 'Krogan',
         url: 'https://kroganswap.com/',
