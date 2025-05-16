@@ -215,7 +215,7 @@ export const projects: ProjectType[] = [
         category: 'gaming',
         name: 'xAntsGame',
         url: 'https://www.antsgame.io/',
-        icon: '/logos/xAntsGame.png',
+        icon: '/logos/xAntsGame.jpg',
     },
     {
         category: 'gaming',
