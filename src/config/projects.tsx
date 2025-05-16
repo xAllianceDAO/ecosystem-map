@@ -809,7 +809,7 @@ export const projects: ProjectType[] = [
         category: 'startup',
         name: 'VeroPay',
         url: 'https://vero.ro/',
-        icon: '/logos/veropay.jpg',
+        icon: '/logos/Veropay.svg',
     },
     {
         category: 'startup',
