@@ -1,10 +1,12 @@
+import { Category } from '@/config/categories.tsx';
+
 export interface CategoryType {
-    id: string;
+    id: Category;
     name: string;
 }
 
 export interface ProjectType {
-    category: string;
+    category: Category;
     name: string;
     url: string | null;
     icon: string | null;

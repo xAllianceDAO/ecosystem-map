@@ -1,48 +1,62 @@
 import { CategoryType } from '@/types/project';
 
+export enum Category {
+    defi = 'defi',
+    tool = 'tool',
+    ai = 'ai',
+    marketplace = 'marketplace',
+    nft = 'nft',
+    gaming = 'gaming',
+    startup = 'startup',
+    meme = 'meme',
+    development = 'development',
+    media = 'media',
+    staking = 'staking',
+}
+
 export const categories: CategoryType[] = [
     {
-        id: 'defi',
+        id: Category.defi,
         name: 'DeFi',
     },
     {
-        id: 'tool',
+        id: Category.tool,
         name: 'Tools',
     },
     {
-        id: 'ai',
+        id: Category.ai,
         name: 'AI',
     },
     {
-        id: 'marketplace',
+        id: Category.marketplace,
         name: 'NFT Marketplaces',
     },
     {
-        id: 'nft',
+        id: Category.nft,
         name: 'NFTs',
     },
     {
-        id: 'gaming',
+        id: Category.gaming,
         name: 'Gaming',
     },
     {
-        id: 'startup',
+        id: Category.startup,
         name: 'Startups',
     },
     {
-        id: 'meme',
+        id: Category.meme,
         name: 'Memes',
     },
     {
-        id: 'development',
+        id: Category.development,
         name: 'Development',
     },
     {
-        id: 'media',
+        id: Category.media,
         name: 'Media Presence',
     },
     {
-        id: 'staking',
+        id: Category.staking,
         name: 'Staking Agencies',
     },
 ];

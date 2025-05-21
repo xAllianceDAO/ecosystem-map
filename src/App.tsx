@@ -3,7 +3,6 @@ import Footer from '@/components/Footer.tsx';
 import { FormCallToAction } from '@/components/FormCallToAction.tsx';
 import AnimatedGalaxy from '@/components/Galaxy.tsx';
 import Masonry from '@/components/Masonry';
-import OfficialCategory from '@/components/OfficialCategory.tsx';
 import { categories } from '@/config/categories.tsx';
 import { MasonryInstance } from '@/types/masonry';
 import { useEffect, useRef } from 'react';
@@ -34,15 +33,12 @@ function App() {
         <>
             <Container fluid className={'position-relative z-1 p-md-5'}>
                 <Row className={'align-items-center mb-0 mb-md-5'}>
-                    <Col xs={12} md={5} className={'my-5 my-md-0'}>
+                    <Col xs={12} className={'my-5 my-md-0'}>
                         <Logo />
-                    </Col>
-                    <Col xs={12} md className={'mb-4 mb-md-0'}>
-                        <OfficialCategory />
                     </Col>
                 </Row>
                 <Masonry ref={masonry} options={masonryOptions} className={'position-relative min-vh-100'}>
-                    {categories.map(category => (
+                    {categories.map((category) => (
                         <Category key={category.id} category={category} />
                     ))}
                 </Masonry>
