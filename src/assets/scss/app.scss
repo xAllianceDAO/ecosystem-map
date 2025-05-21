@@ -8,7 +8,7 @@ $background-blur: 8px;
     backdrop-filter: blur($background-blur);
 
     .card-header {
-        @extend .mb-0;
+        --bs-card-border-width: 0;
     }
 }
 
