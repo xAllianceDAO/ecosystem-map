@@ -81,8 +81,8 @@ export const projects: ProjectType[] = [
     },
     {
         category: 'marketplace',
-        name: 'OnionX',
-        url: 'https://www.ooxart.art/',
+        name: 'OOX Marketplace',
+        url: 'https://www.oox.art/',
         icon: 'oox.png',
     },
     {
@@ -441,9 +441,9 @@ export const projects: ProjectType[] = [
     },
     {
         category: 'nft',
-        name: 'SuperVictorUniverse',
+        name: 'SuperVictor Universe',
         url: 'https://supervictornft.com/',
-        icon: 'https://raw.githubusercontent.com/multiversx/mx-assets/refs/heads/master/tokens/VICTOR-9fa27f/logo.svg',
+        icon: '/logos/SuperVictorUniverse.png',
     },
     {
         category: 'nft',
@@ -815,7 +815,7 @@ export const projects: ProjectType[] = [
         category: 'startup',
         name: 'VeroPay',
         url: 'https://vero.ro/',
-        icon: '/logos/Veropay.svg',
+        icon: '/logos/Veropay.jpg',
     },
     {
         category: 'startup',
@@ -909,9 +909,9 @@ export const projects: ProjectType[] = [
     },
     {
         category: 'development',
-        name: 'Buildly',
-        url: 'https://www.buildly.io/',
-        icon: '/logos/Buildly.jpg',
+        name: 'Buidly',
+        url: 'https://www.buidly.com/',
+        icon: '/logos/Buidly.jpg',
     },
     {
         category: 'development',
@@ -1776,5 +1776,59 @@ export const projects: ProjectType[] = [
         name: '0% fee + monthly aidrop $WATER Works',
         url: 'https://twitter.com/Web3Water',
         icon: 'https://tools.multiversx.com/assets-cdn/identities/web3water/icon.png',
+    },
+    {
+        category: 'gaming',
+        name: 'BOBER Battle',
+        url: 'https://boberbattle.com/',
+        icon: '/logos/BoberBattle.jpg',
+    },
+    {
+        category: 'meme',
+        name: 'xMorPH',
+        url: 'https://xmorph.xyz/',
+        icon: '/logos/xMorPH.png',
+    },
+    {
+        category: 'media',
+        name: 'MultiversX Brasil',
+        url: 'http://mvxbrasil.substack.com/',
+        icon: '/logos/MultiversXBrasil.png',
+    },
+    {
+        category: 'startup',
+        name: 'Envirolo',
+        url: 'https://envirolo.com/',
+        icon: '/logos/Envirolo.jpg',
+    },
+    {
+        category: 'gaming',
+        name: 'ElrondBet.net',
+        url: 'https://elrondbet.net/',
+        icon: '/logos/ElrondBet.png',
+    },
+    {
+        category: 'meme',
+        name: 'WOJAINU',
+        url: 'https://woja.xyz/',
+        icon: '/logos/WOJAINU.png',
+    },
+    {
+        category: 'nft',
+        name: 'WojaX',
+        url: 'https://xoxno.com/collection/WJX-31a722',
+        icon: '/logos/WojaX.jpg',
+    },
+    {
+        category: 'gaming',
+        name: 'Arcadia',
+        url: 'https://x.com/xArcadiaGame',
+        icon: '/logos/Arcadia.jpg',
+    },
+    {
+        category: 'startup',
+        name: 'RaceLedger',
+        url: 'https://raceledger.xyz/',
+        icon: '/logos/RaceLedger.jpg',
     },
 ];
