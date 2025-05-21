@@ -818,7 +818,7 @@ export const projects: ProjectType[] = [
         icon: '/logos/Veropay.jpg',
     },
     {
-        category: 'startup',
+        category: 'development',
         name: 'xAudits',
         url: 'https://xaudits.io/',
         icon: '/logos/xAudits.jpg',
