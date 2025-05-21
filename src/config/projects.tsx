@@ -816,7 +816,7 @@ export const projects: ProjectType[] = [
         category: Category.startup,
         name: 'VeroPay',
         url: 'https://vero.ro/',
-        icon: '/logos/Veropay.jpg',
+        icon: '/logos/VeroPay.png',
     },
     {
         category: Category.development,
