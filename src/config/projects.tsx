@@ -1844,4 +1844,10 @@ export const projects: ProjectType[] = [
         url: 'https://profetas666.com/',
         icon: '/logos/Profetas666.jpg',
     },
+    {
+        category: Category.meme,
+        name: 'Bateman',
+        url: 'https://linktr.ee/batemankoin',
+        icon: '/logos/Bateman.jpg',
+    },
 ];
