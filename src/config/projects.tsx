@@ -1832,4 +1832,10 @@ export const projects: ProjectType[] = [
         url: 'https://raceledger.xyz/',
         icon: '/logos/RaceLedger.jpg',
     },
+    {
+        category: Category.meme,
+        name: '$HYPE',
+        url: 'https://hypey.io/',
+        icon: '/logos/Hype.jpg',
+    },
 ];
