@@ -1834,7 +1834,7 @@ export const projects: ProjectType[] = [
     },
     {
         category: Category.meme,
-        name: '$HYPE',
+        name: 'HYPE',
         url: 'https://hypey.io/',
         icon: '/logos/Hype.jpg',
     },
