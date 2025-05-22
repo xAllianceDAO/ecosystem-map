@@ -1850,4 +1850,10 @@ export const projects: ProjectType[] = [
         url: 'https://linktr.ee/batemankoin',
         icon: '/logos/Bateman.jpg',
     },
+    {
+        category: Category.defi,
+        name: 'Emorya Finance',
+        url: 'https://www.emorya.com/',
+        icon: '/logos/EmoryaFinance.jpg',
+    },
 ];
