@@ -1838,4 +1838,10 @@ export const projects: ProjectType[] = [
         url: 'https://hypey.io/',
         icon: '/logos/Hype.jpg',
     },
+    {
+        category: Category.meme,
+        name: 'Profetas666',
+        url: 'https://profetas666.com/',
+        icon: '/logos/Profetas666.jpg',
+    },
 ];
