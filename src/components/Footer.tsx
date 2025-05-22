@@ -8,11 +8,7 @@ export default function Footer() {
             <Row className={'align-items-center text-muted small'}>
                 <Col>
                     Powered by&nbsp;
-                    <a
-                        href={'https://xalliance.io/'}
-                        target={'_blank'}
-                        aria-labelledby={'Open xAlliance'}
-                    >
+                    <a href={'https://xalliance.io/'} target={'_blank'} aria-labelledby={'Open xAlliance'}>
                         <Image
                             src={logo}
                             alt={'xAlliance'}
@@ -24,9 +20,7 @@ export default function Footer() {
                         />
                     </a>
                 </Col>
-                <Col className={'text-end'}>
-                    Updated on {moment(BUILD_DATE).format('DD MMMM YYYY')}
-                </Col>
+                <Col className={'text-end'}>Updated on {moment(BUILD_DATE).format('DD MMMM YYYY')}</Col>
             </Row>
         </Container>
     );

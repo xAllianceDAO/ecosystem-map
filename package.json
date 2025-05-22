@@ -17,17 +17,22 @@
     "@react-three/fiber": "^9.1.2",
     "@react-three/postprocessing": "^3.0.4",
     "bootstrap": "^5.3.6",
+    "html-to-image": "^1.11.13",
+    "html2canvas": "^1.4.1",
+    "imagesloaded": "^5.0.0",
     "moment": "^2.30.1",
     "react": "^19.1.0",
     "react-bootstrap": "^2.10.10",
     "react-dom": "^19.1.0",
     "react-masonry-component": "^6.3.0",
-    "three": "^0.176.0"
+    "three": "^0.176.0",
+    "ua-parser-js": "^2.0.3"
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",
     "@fortawesome/fontawesome-common-types": "^6.7.2",
     "@types/bootstrap": "^5.2.10",
+    "@types/imagesloaded": "^4.1.7",
     "@types/node": "^22.15.21",
     "@types/react": "^19.1.5",
     "@types/react-dom": "^19.1.5",
