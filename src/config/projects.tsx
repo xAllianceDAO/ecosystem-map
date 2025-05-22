@@ -706,7 +706,7 @@ export const projects: ProjectType[] = [
     },
     {
         category: Category.meme,
-        name: 'EgldHeist',
+        name: 'EGLDHeist',
         url: 'https://www.egldheist.com/',
         icon: '/logos/EGLDHeist.jpg',
     },
