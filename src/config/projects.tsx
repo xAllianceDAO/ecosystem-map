@@ -1862,4 +1862,10 @@ export const projects: ProjectType[] = [
         url: 'https://fedupclown.com/',
         icon: '/logos/FEDUP.png',
     },
+    {
+        category: Category.meme,
+        name: 'RARE',
+        url: 'https://superrarebears.com/',
+        icon: '/logos/RARE.png',
+    },
 ];
