@@ -1856,4 +1856,10 @@ export const projects: ProjectType[] = [
         url: 'https://www.emorya.com/',
         icon: '/logos/EmoryaFinance.jpg',
     },
+    {
+        category: Category.meme,
+        name: 'FEDUP',
+        url: 'https://fedupclown.com/',
+        icon: '/logos/FEDUP.png',
+    },
 ];
