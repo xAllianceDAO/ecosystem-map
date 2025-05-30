@@ -1874,4 +1874,10 @@ export const projects: ProjectType[] = [
         url: 'https://linktr.ee/ROARHighSpeX',
         icon: '/logos/ROAR.jpg',
     },
+    {
+        category: Category.nft,
+        name: 'Multiversxbots',
+        url: 'https://xoxno.com/collection/XBOTS-c5cdeb',
+        icon: '/logos/Multiversxbots.jpg',
+    },
 ];
