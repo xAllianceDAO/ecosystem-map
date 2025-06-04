@@ -1880,4 +1880,10 @@ export const projects: ProjectType[] = [
         url: 'https://xoxno.com/collection/XBOTS-c5cdeb',
         icon: '/logos/Multiversxbots.jpg',
     },
+    {
+        category: Category.development,
+        name: 'KEPLER',
+        url: 'https://kepler.projectx.mx/',
+        icon: '/logos/project-x.png',
+    },
 ];
