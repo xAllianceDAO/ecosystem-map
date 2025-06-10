@@ -1886,4 +1886,10 @@ export const projects: ProjectType[] = [
         url: 'https://kepler.projectx.mx/',
         icon: '/logos/project-x.png',
     },
+    {
+        category: Category.ai,
+        name: 'VibeOX',
+        url: 'http://vibeox.ai/',
+        icon: '/logos/VibeOX.png',
+    },
 ];
