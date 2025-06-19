@@ -1898,4 +1898,10 @@ export const projects: ProjectType[] = [
         url: 'https://xoxno.com/collection/R2L-6aa15e',
         icon: '/logos/RoadToLibertad.jpg',
     },
+    {
+        category: Category.nft,
+        name: 'HYPO',
+        url: 'https://x.com/HYPO_Art',
+        icon: '/logos/HYPO.jpg',
+    },
 ];
