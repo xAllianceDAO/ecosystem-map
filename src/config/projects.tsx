@@ -1892,4 +1892,10 @@ export const projects: ProjectType[] = [
         url: 'http://vibeox.ai/',
         icon: '/logos/VibeOX.png',
     },
+    {
+        category: Category.nft,
+        name: 'Road to Libertad',
+        url: 'https://xoxno.com/collection/R2L-6aa15e',
+        icon: '/logos/RoadToLibertad.jpg',
+    },
 ];
