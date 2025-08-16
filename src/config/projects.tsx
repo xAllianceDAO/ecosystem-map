@@ -1889,7 +1889,7 @@ export const projects: ProjectType[] = [
     {
         category: Category.ai,
         name: 'VibeOX',
-        url: 'http://vibeox.ai/',
+        url: 'https://vibeox.ai/',
         icon: '/logos/VibeOX.png',
     },
     {
@@ -1903,5 +1903,11 @@ export const projects: ProjectType[] = [
         name: 'HYPO',
         url: 'https://x.com/HYPO_Art',
         icon: '/logos/HYPO.jpg',
+    },
+    {
+        category: Category.startup,
+        name: 'Growing Farm',
+        url: 'https://growing.farm/',
+        icon: '/logos/GrowingFarm.jpg',
     },
 ];
