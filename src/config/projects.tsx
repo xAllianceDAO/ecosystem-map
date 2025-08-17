@@ -1910,4 +1910,10 @@ export const projects: ProjectType[] = [
         url: 'https://growing.farm/',
         icon: '/logos/GrowingFarm.jpg',
     },
+    {
+        category: Category.startup,
+        name: 'Sensei Ecosystem',
+        url: 'https://senseitemple.com/',
+        icon: '/logos/SenseiEcosystem.png',
+    },
 ];
