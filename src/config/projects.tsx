@@ -1916,4 +1916,11 @@ export const projects: ProjectType[] = [
         url: 'https://senseitemple.com/',
         icon: '/logos/SenseiEcosystem.png',
     },
+ {
+        category: Category.staking,
+        name: 'Project X Staking',
+        url: 'https://explorer.multiversx.com/identities/ProjectX',
+        icon: '/logos/project-x.png',
+    },
+
 ];
