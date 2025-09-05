@@ -1114,12 +1114,6 @@ export const projects: ProjectType[] = [
     },
     {
         category: Category.staking,
-        name: 'Deutsche Telekom Staking',
-        url: 'https://geschaeftskunden.telekom.de/digitale-loesungen/infrastructure-as-a-service/staking-en',
-        icon: 'https://tools.multiversx.com/assets-cdn/identities/staking-vaas/icon.png',
-    },
-    {
-        category: Category.staking,
         name: 'EAPES Validator',
         url: 'https://eapesvalidator.com',
         icon: 'https://tools.multiversx.com/assets-cdn/identities/eapesvalidator/icon.png',
