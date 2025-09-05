@@ -5,13 +5,13 @@ import { useMemo } from 'react';
 import { Card, Col, Row } from 'react-bootstrap';
 
 type CategoryProps = {
-    category: CategoryType,
-}
+    category: CategoryType;
+};
 
 export default function Category({ category }: CategoryProps) {
     const categoryProjects = useMemo(() => {
         return projects
-            .filter(project => project.category === category.id)
+            .filter((project) => project.category === category.id)
             .sort((a, b) => a.name.localeCompare(b.name));
     }, [category.id]);
     let sizes = 'w-100 w-md-50 w-lg-33';
@@ -23,9 +23,7 @@ export default function Category({ category }: CategoryProps) {
     return (
         <div className={`position-absolute pb-4 p-md-3 ${sizes}`}>
             <Card>
-                <Card.Header className={'fs-5'}>
-                    {category.name}
-                </Card.Header>
+                <Card.Header className={'fs-5'}>{category.name}</Card.Header>
                 <Card.Body className={'projects'}>
                     <Row className={'justify-content-center align-items-center g-4'}>
                         {categoryProjects.map((project, index) => (

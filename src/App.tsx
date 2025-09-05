@@ -3,7 +3,9 @@ import Footer from '@/components/Footer.tsx';
 import { FormCallToAction } from '@/components/FormCallToAction.tsx';
 import AnimatedGalaxy from '@/components/Galaxy.tsx';
 import Masonry from '@/components/Masonry';
+import Search from '@/components/Search.tsx';
 import { categories } from '@/config/categories.tsx';
+import { SearchProvider } from '@/contexts/SearchContext.tsx';
 import { MasonryInstance } from '@/types/masonry';
 import { useEffect, useRef } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
@@ -30,11 +32,14 @@ function App() {
     }, []);
 
     return (
-        <>
+        <SearchProvider>
             <Container fluid className={'position-relative z-1 p-md-5'}>
-                <Row className={'align-items-center mb-0 mb-md-5'}>
-                    <Col xs={12} className={'my-5 my-md-0'}>
+                <Row className={'align-items-center justify-content-between mb-0 mb-md-5 px-3'}>
+                    <Col xs={12} sm className={'my-5 my-md-0'}>
                         <Logo />
+                    </Col>
+                    <Col xs={12} sm={'auto'} className={'mb-2 mb-md-0'}>
+                        <Search />
                     </Col>
                 </Row>
                 <Masonry ref={masonry} options={masonryOptions} className={'position-relative min-vh-100'}>
@@ -48,7 +53,7 @@ function App() {
                 <AnimatedGalaxy />
             </div>
             <FormCallToAction />
-        </>
+        </SearchProvider>
     );
 }
 
