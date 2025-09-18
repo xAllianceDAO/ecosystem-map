@@ -232,12 +232,6 @@ export const projects: ProjectType[] = [
     },
     {
         category: Category.gaming,
-        name: 'Giants',
-        url: 'https://giantsvillage.com/',
-        icon: 'giants.svg',
-    },
-    {
-        category: Category.gaming,
         name: 'Gods of Fire',
         url: 'https://godsoffire.io/',
         icon: '/logos/GodsOfFire.jpg',
