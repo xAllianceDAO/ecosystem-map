@@ -76,12 +76,6 @@ export const projects: ProjectType[] = [
     },
     {
         category: Category.marketplace,
-        name: 'Flipix',
-        url: 'https://flipix.io/',
-        icon: 'flipix.svg',
-    },
-    {
-        category: Category.marketplace,
         name: 'OOX Marketplace',
         url: 'https://www.oox.art/',
         icon: 'oox.png',
@@ -289,12 +283,6 @@ export const projects: ProjectType[] = [
         name: 'xLibrary',
         url: 'https://www.mvxlibrary.com/',
         icon: '/logos/xLibrary.jpg',
-    },
-    {
-        category: Category.tool,
-        name: 'xAnalyze',
-        url: 'https://xanalyze.io/',
-        icon: '/logos/xAnalyze.jpg',
     },
     {
         category: Category.tool,
@@ -775,12 +763,6 @@ export const projects: ProjectType[] = [
         name: 'QoWatt',
         url: 'https://qowatt.network/',
         icon: '/logos/QoWatt.jpg',
-    },
-    {
-        category: Category.startup,
-        name: 'BHero',
-        url: 'https://bhero.com/',
-        icon: '/logos/bhero.png',
     },
     {
         category: Category.startup,
