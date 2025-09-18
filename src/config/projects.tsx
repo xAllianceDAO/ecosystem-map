@@ -544,12 +544,6 @@ export const projects: ProjectType[] = [
     },
     {
         category: Category.nft,
-        name: 'xKing',
-        url: 'https://www.xkingnftx.com/',
-        icon: '/logos/xKing.jpg',
-    },
-    {
-        category: Category.nft,
         name: 'Stramosi',
         url: 'https://www.stramosi.com/',
         icon: 'https://raw.githubusercontent.com/multiversx/mx-assets/refs/heads/master/tokens/MOS-b9b4b2/logo.png',
