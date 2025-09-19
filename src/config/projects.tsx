@@ -1886,4 +1886,10 @@ export const projects: ProjectType[] = [
         url: 'https://explorer.multiversx.com/identities/ProjectX',
         icon: '/logos/project-x.png',
     },
+    {
+        category: Category.ai,
+        name: 'Timeworx',
+        url: 'https://timeworx.io/',
+        icon: '/logos/Timeworx.jpg',
+    },
 ];
