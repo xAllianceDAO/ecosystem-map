@@ -875,7 +875,7 @@ export const projects: ProjectType[] = [
     {
         category: Category.development,
         name: 'Gaupa Labs',
-        url: 'https://gaupalabs.com/',
+        url: 'https://www.gaupa.xyz/',
         icon: '/logos/GaupaLabs.jpg',
     },
     {
