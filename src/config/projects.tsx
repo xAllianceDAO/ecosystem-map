@@ -443,7 +443,7 @@ export const projects: ProjectType[] = [
     {
         category: Category.nft,
         name: 'Divergent Club',
-        url: 'https://divergentclub.framer.website/',
+        url: 'https://www.divergentclub.xyz/',
         icon: 'divergentclub.svg',
     },
     {
