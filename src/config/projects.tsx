@@ -479,7 +479,7 @@ export const projects: ProjectType[] = [
     {
         category: Category.nft,
         name: 'GalaticX',
-        url: 'https://www.galacticxbet.com/',
+        url: 'https://x.com/GalacticXsocios',
         icon: '/logos/GalaticX.jpg',
     },
     {
