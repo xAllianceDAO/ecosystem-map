@@ -486,7 +486,7 @@ export const projects: ProjectType[] = [
         category: Category.nft,
         name: 'OwlCity',
         url: 'https://x.com/OwlCitizensX',
-        icon: 'https://raw.githubusercontent.com/multiversx/mx-assets/refs/heads/master/tokens/OCXSII-26bb89/logo.png',
+        icon: '/logos/OwlCity.jpg',
     },
     {
         category: Category.gaming,
