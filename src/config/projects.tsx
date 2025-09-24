@@ -1892,4 +1892,10 @@ export const projects: ProjectType[] = [
         url: 'https://timeworx.io/',
         icon: '/logos/Timeworx.jpg',
     },
+    {
+        category: Category.meme,
+        name: 'Olive',
+        url: 'https://olivedao.gitbook.io/olivedao',
+        icon: '/logos/OliveDAO.jpg',
+    },
 ];
