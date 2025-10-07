@@ -652,12 +652,6 @@ export const projects: ProjectType[] = [
     },
     {
         category: Category.meme,
-        name: 'FRED',
-        url: 'https://x.com/FREDONMVX',
-        icon: '/logos/FRED.jpg',
-    },
-    {
-        category: Category.meme,
         name: 'Blazzord',
         url: 'https://x.com/BlazzordTV',
         icon: '/logos/Blazzord.jpg',
