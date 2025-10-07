@@ -148,12 +148,6 @@ export const projects: ProjectType[] = [
     },
     {
         category: Category.defi,
-        name: 'QuantumX',
-        url: 'https://www.quantumx.network/',
-        icon: 'quantumx.png',
-    },
-    {
-        category: Category.defi,
         name: 'ENTITY',
         url: 'https://www.entity.global/',
         icon: 'https://tools.multiversx.com/assets-cdn/identities/enttechnologies/icon.png',
