@@ -214,12 +214,6 @@ export const projects: ProjectType[] = [
     },
     {
         category: Category.gaming,
-        name: 'The Cursed Land',
-        url: 'https://www.thecursedland.com/',
-        icon: 'the-cursed-land.svg',
-    },
-    {
-        category: Category.gaming,
         name: 'Gods of Fire',
         url: 'https://godsoffire.io/',
         icon: '/logos/GodsOfFire.jpg',
