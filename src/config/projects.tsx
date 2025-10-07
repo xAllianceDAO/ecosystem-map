@@ -1822,12 +1822,6 @@ export const projects: ProjectType[] = [
     },
     {
         category: Category.meme,
-        name: 'RARE',
-        url: 'https://superrarebears.com/',
-        icon: '/logos/RARE.png',
-    },
-    {
-        category: Category.meme,
         name: 'ROAR',
         url: 'https://linktr.ee/ROARHighSpeX',
         icon: '/logos/ROAR.jpg',
