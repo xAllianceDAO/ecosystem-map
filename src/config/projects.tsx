@@ -393,12 +393,6 @@ export const projects: ProjectType[] = [
         icon: 'boogasofficial.svg',
     },
     {
-        category: Category.startup,
-        name: 'Globees',
-        url: 'https://www.globees.co/',
-        icon: 'https://raw.githubusercontent.com/multiversx/mx-assets/refs/heads/master/tokens/BEE-cb37b6/logo.png',
-    },
-    {
         category: Category.nft,
         name: 'ESTAR',
         url: 'https://estar.games/',
