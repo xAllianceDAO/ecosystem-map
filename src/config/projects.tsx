@@ -183,12 +183,6 @@ export const projects: ProjectType[] = [
         icon: 'coindrip.svg',
     },
     {
-        category: Category.defi,
-        name: 'FunDex',
-        url: 'https://fundex.fun/',
-        icon: '/logos/FunDex.jpg',
-    },
-    {
         category: Category.gaming,
         name: 'Materia Prima',
         url: 'https://play.materiaprimanft.com/',
