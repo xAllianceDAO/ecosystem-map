@@ -106,12 +106,6 @@ export const projects: ProjectType[] = [
     },
     {
         category: Category.defi,
-        name: 'OneDex',
-        url: 'https://onedex.app/',
-        icon: 'onedex.svg',
-    },
-    {
-        category: Category.defi,
         name: 'Pulsar Money',
         url: 'https://pulsar.money/',
         icon: 'pulsarmoney.svg',
