@@ -23,6 +23,13 @@ export default defineConfig({
             '@': path.resolve(__dirname, './src'),
         },
     },
+    css: {
+        preprocessorOptions: {
+            scss: {
+                silenceDeprecations: ['color-functions', 'global-builtin', 'import', 'if-function'],
+            },
+        },
+    },
     define: {
         BUILD_DATE: new Date(),
     },

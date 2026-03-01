@@ -49,7 +49,7 @@ export function FormCallToAction() {
                 className={'bg-primary rounded-start px-2 fs-1 pointer-cursor'}
                 onClick={() => setIsOpen(!isOpen)}
             >
-                <FontAwesomeIcon icon={isOpen ? faChevronRight : faCog} fixedWidth />
+                <FontAwesomeIcon icon={isOpen ? faChevronRight : faCog} />
             </Col>
             <Col className={'bg-primary p-3 rounded rounded-top-0 rounded-end-0'} style={{ width: '300px' }}>
                 <Row className={'gy-3 d-inline-flex'}>

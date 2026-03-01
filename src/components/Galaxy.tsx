@@ -28,35 +28,6 @@ function Galaxy({ dof }: { dof: RefObject<DepthOfFieldEffect | null> }) {
     };
     const particles = useRef<Points>(null);
 
-    useEffect(() => {
-        generateGalaxy();
-    });
-
-    useFrame((state) => {
-        if (dof.current) {
-            dof.current.cocMaterial.uniforms.focusDistance.value = parameters.focusDistance;
-            dof.current.cocMaterial.uniforms.focalLength.value = parameters.focalLength;
-            dof.current.resolution.height = parameters.height;
-            dof.current.resolution.width = parameters.width;
-            dof.current.target = new Vector3(parameters.focusX, parameters.focusY, parameters.focusZ);
-            dof.current.blendMode.opacity.value = parameters.opacity;
-        }
-
-        if (particles.current === null) {
-            return;
-        }
-
-        if (parameters.mouse) {
-            particles.current.rotation.x = MathUtils.lerp(particles.current.rotation.x, state.pointer.y / 10, 0.2);
-            particles.current.rotation.y = MathUtils.lerp(particles.current.rotation.y, -state.pointer.x / 2, 0.2);
-        }
-
-        if (parameters.animate) {
-            const elapsedTime = state.clock.getElapsedTime();
-            particles.current.rotation.y = 0.05 * elapsedTime;
-        }
-    });
-
     const generateGalaxy = () => {
         const positions = new Float32Array(parameters.count * 3);
         const colors = new Float32Array(parameters.count * 3);
@@ -104,6 +75,37 @@ function Galaxy({ dof }: { dof: RefObject<DepthOfFieldEffect | null> }) {
         }
     };
 
+    useEffect(() => {
+        generateGalaxy();
+    });
+
+    useFrame((state) => {
+        if (!dof.current) {
+            return;
+        }
+
+        dof.current.cocMaterial.uniforms.focusDistance.value = parameters.focusDistance;
+        dof.current.cocMaterial.uniforms.focalLength.value = parameters.focalLength;
+        dof.current.resolution.height = parameters.height;
+        dof.current.resolution.width = parameters.width;
+        dof.current.target = new Vector3(parameters.focusX, parameters.focusY, parameters.focusZ);
+        dof.current.blendMode.opacity.value = parameters.opacity;
+
+        if (particles.current === null) {
+            return;
+        }
+
+        if (parameters.mouse) {
+            particles.current.rotation.x = MathUtils.lerp(particles.current.rotation.x, state.pointer.y / 10, 0.2);
+            particles.current.rotation.y = MathUtils.lerp(particles.current.rotation.y, -state.pointer.x / 2, 0.2);
+        }
+
+        if (parameters.animate) {
+            const elapsedTime = state.clock.getElapsedTime();
+            particles.current.rotation.y = 0.05 * elapsedTime;
+        }
+    });
+
     return (
         <points ref={particles}>
             <bufferGeometry />
@@ -120,8 +122,6 @@ function Galaxy({ dof }: { dof: RefObject<DepthOfFieldEffect | null> }) {
 
 function Nucleus({ size }: { size: number }) {
     const nucleusRef = useRef<Mesh>(null);
-    const color = new Color();
-    color.setHSL(Math.random(), 0.7, Math.random() * 0.2 + 0.05);
 
     return (
         <mesh ref={nucleusRef} position={[0, 0, 0]} scale={[size, size, size]}>
