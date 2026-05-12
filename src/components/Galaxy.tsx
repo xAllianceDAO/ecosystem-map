@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/immutability */
 import { Canvas, useFrame } from '@react-three/fiber';
 import { DepthOfField, EffectComposer } from '@react-three/postprocessing';
 import { DepthOfFieldEffect } from 'postprocessing';
@@ -80,16 +81,18 @@ function Galaxy({ dof }: { dof: RefObject<DepthOfFieldEffect | null> }) {
     });
 
     useFrame((state) => {
-        if (!dof.current) {
+        const dofEffect = dof.current;
+
+        if (!dofEffect) {
             return;
         }
 
-        dof.current.cocMaterial.uniforms.focusDistance.value = parameters.focusDistance;
-        dof.current.cocMaterial.uniforms.focalLength.value = parameters.focalLength;
-        dof.current.resolution.height = parameters.height;
-        dof.current.resolution.width = parameters.width;
-        dof.current.target = new Vector3(parameters.focusX, parameters.focusY, parameters.focusZ);
-        dof.current.blendMode.opacity.value = parameters.opacity;
+        dofEffect.cocMaterial.uniforms.focusDistance.value = parameters.focusDistance;
+        dofEffect.cocMaterial.uniforms.focalLength.value = parameters.focalLength;
+        dofEffect.resolution.height = parameters.height;
+        dofEffect.resolution.width = parameters.width;
+        dofEffect.target = new Vector3(parameters.focusX, parameters.focusY, parameters.focusZ);
+        dofEffect.blendMode.opacity.value = parameters.opacity;
 
         if (particles.current === null) {
             return;
