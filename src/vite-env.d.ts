@@ -1,3 +1,3 @@
 /// <reference types="vite/client" />
 
-declare const BUILD_DATE: Date;
+declare const BUILD_DATE: string;

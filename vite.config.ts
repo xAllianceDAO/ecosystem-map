@@ -31,6 +31,6 @@ export default defineConfig({
         },
     },
     define: {
-        BUILD_DATE: new Date(),
+        BUILD_DATE: JSON.stringify(new Date().toISOString()),
     },
 });
