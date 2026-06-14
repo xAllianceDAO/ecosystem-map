@@ -40,6 +40,18 @@ export const projects: ProjectType[] = [
     },
     {
         category: Category.staking,
+        name: 'Maple Leaf Network',
+        url: '#',
+        icon: 'https://tools.multiversx.com/assets-cdn/identities/mapleleafnetwork/icon.png',
+    },
+    {
+        category: Category.staking,
+        name: 'WeStake',
+        url: '#',
+        icon: 'https://tools.multiversx.com/assets-cdn/identities/westake/icon.png',
+    },
+    {
+        category: Category.staking,
         name: 'Core Block',
         url: 'https://coreblock.cloud',
         icon: 'https://tools.multiversx.com/assets-cdn/identities/core-block/icon.png',
@@ -52,9 +64,9 @@ export const projects: ProjectType[] = [
     },
     {
         category: Category.staking,
-        name: 'Chain State Labs',
-        url: 'https://cslabs.io',
-        icon: 'https://tools.multiversx.com/assets-cdn/identities/cslabsio/icon.png',
+        name: 'Ninja Staking',
+        url: '#',
+        icon: 'https://tools.multiversx.com/assets-cdn/identities/ninjastaking/icon.png',
     },
     {
         category: Category.staking,
@@ -76,21 +88,15 @@ export const projects: ProjectType[] = [
     },
     {
         category: Category.staking,
-        name: 'Binance Staking',
-        url: '#',
-        icon: 'https://tools.multiversx.com/assets-cdn/identities/binance_staking/icon.png',
-    },
-    {
-        category: Category.staking,
         name: 'XOXNO',
         url: 'https://xoxno.com',
         icon: 'https://tools.multiversx.com/assets-cdn/identities/xoxno/icon.png',
     },
     {
         category: Category.staking,
-        name: 'Figment',
-        url: 'https://figment.io',
-        icon: 'https://tools.multiversx.com/assets-cdn/identities/figment-networks/icon.png',
+        name: '$BOBER',
+        url: 'https://boberonmvx.com',
+        icon: 'https://tools.multiversx.com/assets-cdn/identities/bober/icon.png',
     },
     {
         category: Category.staking,
@@ -106,9 +112,21 @@ export const projects: ProjectType[] = [
     },
     {
         category: Category.staking,
+        name: 'Colombia Staking (up to 50%)',
+        url: 'https://colombia-staking.com',
+        icon: 'https://tools.multiversx.com/assets-cdn/identities/colombiastaking/icon.png',
+    },
+    {
+        category: Category.staking,
         name: 'ProCrypto Distributed Staking',
         url: 'https://pc.io',
         icon: 'https://tools.multiversx.com/assets-cdn/identities/procryptostaking/icon.png',
+    },
+    {
+        category: Category.staking,
+        name: 'Foxsy AI (+12% APR w/ 🦊 bonus)',
+        url: 'https://foxsy.ai',
+        icon: 'https://tools.multiversx.com/assets-cdn/identities/oxsyai/icon.png',
     },
     {
         category: Category.staking,
@@ -124,57 +142,9 @@ export const projects: ProjectType[] = [
     },
     {
         category: Category.staking,
-        name: '$BOBER',
-        url: 'https://boberonmvx.com',
-        icon: 'https://tools.multiversx.com/assets-cdn/identities/bober/icon.png',
-    },
-    {
-        category: Category.staking,
-        name: 'Colombia Staking (up to 50%)',
-        url: 'https://colombia-staking.com',
-        icon: 'https://tools.multiversx.com/assets-cdn/identities/colombiastaking/icon.png',
-    },
-    {
-        category: Category.staking,
-        name: 'Foxsy AI (+12% APR w/ 🦊 bonus)',
-        url: 'https://foxsy.ai',
-        icon: 'https://tools.multiversx.com/assets-cdn/identities/oxsyai/icon.png',
-    },
-    {
-        category: Category.staking,
-        name: 'ARC Stake',
-        url: 'arcstake.com',
-        icon: 'https://tools.multiversx.com/assets-cdn/identities/arcstake/icon.png',
-    },
-    {
-        category: Category.staking,
-        name: 'MrEGLD',
-        url: '#',
-        icon: 'https://tools.multiversx.com/assets-cdn/identities/MrEGLD/icon.png',
-    },
-    {
-        category: Category.staking,
-        name: 'Maple Leaf Network',
-        url: '#',
-        icon: 'https://tools.multiversx.com/assets-cdn/identities/mapleleafnetwork/icon.png',
-    },
-    {
-        category: Category.staking,
-        name: 'WeStake',
-        url: '#',
-        icon: 'https://tools.multiversx.com/assets-cdn/identities/westake/icon.png',
-    },
-    {
-        category: Category.staking,
-        name: 'Star Staking',
-        url: '#',
-        icon: 'https://tools.multiversx.com/assets-cdn/identities/star_staking/icon.png',
-    },
-    {
-        category: Category.staking,
-        name: 'MGStaking',
-        url: 'https://MGStaking.com/',
-        icon: 'https://tools.multiversx.com/assets-cdn/identities/mgstaking/icon.png',
+        name: 'Egld Staking Provider 🎖',
+        url: 'https://egldstakingprovider.com',
+        icon: 'https://tools.multiversx.com/assets-cdn/identities/egldstakingprovider/icon.png',
     },
     {
         category: Category.staking,
@@ -187,6 +157,42 @@ export const projects: ProjectType[] = [
         name: 'Project X (up to 15% APR)',
         url: 'https://projectx.mx/',
         icon: 'https://tools.multiversx.com/assets-cdn/identities/ProjectX/icon.png',
+    },
+    {
+        category: Category.staking,
+        name: 'MrsEGLD',
+        url: '#',
+        icon: 'https://tools.multiversx.com/assets-cdn/identities/MrsEGLD/icon.png',
+    },
+    {
+        category: Category.staking,
+        name: 'MrEGLD',
+        url: '#',
+        icon: 'https://tools.multiversx.com/assets-cdn/identities/MrEGLD/icon.png',
+    },
+    {
+        category: Category.staking,
+        name: 'ARC Stake',
+        url: 'arcstake.com',
+        icon: 'https://tools.multiversx.com/assets-cdn/identities/arcstake/icon.png',
+    },
+    {
+        category: Category.staking,
+        name: 'Chain State Labs',
+        url: 'https://cslabs.io',
+        icon: 'https://tools.multiversx.com/assets-cdn/identities/cslabsio/icon.png',
+    },
+    {
+        category: Category.staking,
+        name: 'Star Staking',
+        url: '#',
+        icon: 'https://tools.multiversx.com/assets-cdn/identities/star_staking/icon.png',
+    },
+    {
+        category: Category.staking,
+        name: 'Cointelegraph Decentralization Guardians',
+        url: 'https://cointelegraph-guardians.com/',
+        icon: 'https://tools.multiversx.com/assets-cdn/identities/ctdg/icon.png',
     },
     {
         category: Category.staking,
@@ -214,21 +220,15 @@ export const projects: ProjectType[] = [
     },
     {
         category: Category.staking,
-        name: 'TitanStake',
-        url: 'https://www.titan-stake.com/',
-        icon: 'https://tools.multiversx.com/assets-cdn/identities/titanstake/icon.png',
-    },
-    {
-        category: Category.staking,
-        name: 'Ninja Staking',
-        url: '#',
-        icon: 'https://tools.multiversx.com/assets-cdn/identities/ninjastaking/icon.png',
-    },
-    {
-        category: Category.staking,
         name: 'PartnerStaking',
         url: 'https://partnerstaking.com',
         icon: 'https://tools.multiversx.com/assets-cdn/identities/partnerstaking/icon.png',
+    },
+    {
+        category: Category.staking,
+        name: 'TitanStake',
+        url: 'https://www.titan-stake.com/',
+        icon: 'https://tools.multiversx.com/assets-cdn/identities/titanstake/icon.png',
     },
     {
         category: Category.staking,
@@ -238,9 +238,9 @@ export const projects: ProjectType[] = [
     },
     {
         category: Category.staking,
-        name: 'Egld Staking Provider 🎖',
-        url: 'https://egldstakingprovider.com',
-        icon: 'https://tools.multiversx.com/assets-cdn/identities/egldstakingprovider/icon.png',
+        name: 'Synexis (stable APR)',
+        url: 'https://github.com/synexis',
+        icon: 'https://tools.multiversx.com/assets-cdn/identities/Synexis/icon.png',
     },
     {
         category: Category.staking,
@@ -250,57 +250,9 @@ export const projects: ProjectType[] = [
     },
     {
         category: Category.staking,
-        name: 'Primal Block Two',
-        url: 'https://primalblock.com/',
-        icon: 'https://tools.multiversx.com/assets-cdn/identities/primal-block-two/icon.png',
-    },
-    {
-        category: Category.staking,
-        name: 'Stake Capital Group (validators)',
-        url: 'https://www.stake.capital/ ',
-        icon: 'https://tools.multiversx.com/assets-cdn/identities/stakedao-devops/icon.png',
-    },
-    {
-        category: Category.staking,
-        name: 'OwlHero',
-        url: '#',
-        icon: 'https://tools.multiversx.com/assets-cdn/identities/owlhero/icon.png',
-    },
-    {
-        category: Category.staking,
-        name: 'Tortuga Staking ',
-        url: 'https://tortuga-staking.com/',
-        icon: 'https://tools.multiversx.com/assets-cdn/identities/tortugastaking/icon.png',
-    },
-    {
-        category: Category.staking,
         name: 'EAPES Validator',
         url: 'https://eapesvalidator.com',
         icon: 'https://tools.multiversx.com/assets-cdn/identities/eapesvalidator/icon.png',
-    },
-    {
-        category: Category.staking,
-        name: 'Middle Staking',
-        url: 'https://www.middlestaking.fr/',
-        icon: 'https://tools.multiversx.com/assets-cdn/identities/middlestaking/icon.png',
-    },
-    {
-        category: Category.staking,
-        name: 'Animoca Brands NAAS',
-        url: 'https://www.animocabrands.com',
-        icon: 'https://tools.multiversx.com/assets-cdn/identities/animocabrandsnaas/icon.png',
-    },
-    {
-        category: Category.staking,
-        name: 'Carpathian Stake',
-        url: 'https://carpathianstake.com',
-        icon: 'https://tools.multiversx.com/assets-cdn/identities/carpathianstake/icon.png',
-    },
-    {
-        category: Category.staking,
-        name: 'UnitedGroupCapital',
-        url: 'https://unitedgroup.capital/',
-        icon: 'https://tools.multiversx.com/assets-cdn/identities/unitedgroupcapital/icon.png',
     },
     {
         category: Category.staking,
@@ -310,27 +262,57 @@ export const projects: ProjectType[] = [
     },
     {
         category: Category.staking,
-        name: 'Sky Soft Staking',
+        name: 'Primal Block Two',
+        url: 'https://primalblock.com/',
+        icon: 'https://tools.multiversx.com/assets-cdn/identities/primal-block-two/icon.png',
+    },
+    {
+        category: Category.staking,
+        name: 'OwlHero',
         url: '#',
-        icon: 'https://tools.multiversx.com/assets-cdn/identities/skysoft/icon.png',
+        icon: 'https://tools.multiversx.com/assets-cdn/identities/owlhero/icon.png',
     },
     {
         category: Category.staking,
-        name: 'Synexis (stable APR)',
-        url: 'https://github.com/synexis',
-        icon: 'https://tools.multiversx.com/assets-cdn/identities/Synexis/icon.png',
+        name: 'Middle Staking',
+        url: 'https://www.middlestaking.fr/',
+        icon: 'https://tools.multiversx.com/assets-cdn/identities/middlestaking/icon.png',
     },
     {
         category: Category.staking,
-        name: 'Christstake',
-        url: 'https://christstake.com',
-        icon: 'https://tools.multiversx.com/assets-cdn/identities/christstake/icon.png',
+        name: 'Carpathian Stake',
+        url: 'https://carpathianstake.com',
+        icon: 'https://tools.multiversx.com/assets-cdn/identities/carpathianstake/icon.png',
     },
     {
         category: Category.staking,
-        name: 'ExceptionLabs',
-        url: 'https://exceptionlabs.net',
-        icon: 'https://tools.multiversx.com/assets-cdn/identities/exceptionlabs/icon.png',
+        name: 'Binance Staking',
+        url: '#',
+        icon: 'https://tools.multiversx.com/assets-cdn/identities/binance_staking/icon.png',
+    },
+    {
+        category: Category.staking,
+        name: 'xTech Labs',
+        url: '#',
+        icon: 'https://tools.multiversx.com/assets-cdn/identities/xtechlabs/icon.png',
+    },
+    {
+        category: Category.staking,
+        name: 'Animoca Brands NAAS',
+        url: 'https://www.animocabrands.com',
+        icon: 'https://tools.multiversx.com/assets-cdn/identities/animocabrandsnaas/icon.png',
+    },
+    {
+        category: Category.staking,
+        name: 'UnitedGroupCapital',
+        url: 'https://unitedgroup.capital/',
+        icon: 'https://tools.multiversx.com/assets-cdn/identities/unitedgroupcapital/icon.png',
+    },
+    {
+        category: Category.staking,
+        name: 'BOBER Battle',
+        url: 'https://boberbattle.com/',
+        icon: 'https://tools.multiversx.com/assets-cdn/identities/bober-battle/icon.png',
     },
     {
         category: Category.staking,
@@ -340,21 +322,9 @@ export const projects: ProjectType[] = [
     },
     {
         category: Category.staking,
-        name: 'Stake24',
+        name: 'Sky Soft Staking',
         url: '#',
-        icon: 'https://tools.multiversx.com/assets-cdn/identities/stake24/icon.png',
-    },
-    {
-        category: Category.staking,
-        name: 'Ofero Staking',
-        url: 'https://ofero.network',
-        icon: 'https://tools.multiversx.com/assets-cdn/identities/oferostaking/icon.png',
-    },
-    {
-        category: Category.staking,
-        name: 'Sikka',
-        url: 'https://sikka.tech',
-        icon: 'https://tools.multiversx.com/assets-cdn/identities/sikka_tech/icon.png',
+        icon: 'https://tools.multiversx.com/assets-cdn/identities/skysoft/icon.png',
     },
     {
         category: Category.staking,
@@ -364,15 +334,21 @@ export const projects: ProjectType[] = [
     },
     {
         category: Category.staking,
-        name: 'Tomato',
-        url: '#',
-        icon: 'https://tools.multiversx.com/assets-cdn/identities/tomato/icon.png',
+        name: 'ExceptionLabs',
+        url: 'https://exceptionlabs.net',
+        icon: 'https://tools.multiversx.com/assets-cdn/identities/exceptionlabs/icon.png',
     },
     {
         category: Category.staking,
-        name: 'Stake X',
+        name: 'Christstake',
+        url: 'https://christstake.com',
+        icon: 'https://tools.multiversx.com/assets-cdn/identities/christstake/icon.png',
+    },
+    {
+        category: Category.staking,
+        name: 'Stake24',
         url: '#',
-        icon: 'https://tools.multiversx.com/assets-cdn/identities/stake_x/icon.png',
+        icon: 'https://tools.multiversx.com/assets-cdn/identities/stake24/icon.png',
     },
     {
         category: Category.staking,
@@ -382,9 +358,33 @@ export const projects: ProjectType[] = [
     },
     {
         category: Category.staking,
-        name: 'Easy 2 Stake',
-        url: 'https://easy2stake.com',
-        icon: 'https://tools.multiversx.com/assets-cdn/identities/easy2stake/icon.png',
+        name: 'Sikka',
+        url: 'https://sikka.tech',
+        icon: 'https://tools.multiversx.com/assets-cdn/identities/sikka_tech/icon.png',
+    },
+    {
+        category: Category.staking,
+        name: 'Ofero Staking',
+        url: 'https://ofero.network',
+        icon: 'https://tools.multiversx.com/assets-cdn/identities/oferostaking/icon.png',
+    },
+    {
+        category: Category.staking,
+        name: 'Tomato',
+        url: '#',
+        icon: 'https://tools.multiversx.com/assets-cdn/identities/tomato/icon.png',
+    },
+    {
+        category: Category.staking,
+        name: 'KryptoDots️',
+        url: 'https://kryptodots.com/',
+        icon: 'https://tools.multiversx.com/assets-cdn/identities/kryptodots/icon.png',
+    },
+    {
+        category: Category.staking,
+        name: 'Stake X',
+        url: '#',
+        icon: 'https://tools.multiversx.com/assets-cdn/identities/stake_x/icon.png',
     },
     {
         category: Category.staking,
@@ -394,9 +394,15 @@ export const projects: ProjectType[] = [
     },
     {
         category: Category.staking,
-        name: 'D1fferent Capital',
-        url: 'https://d1fferent.capital/',
-        icon: 'https://tools.multiversx.com/assets-cdn/identities/d1fferentcapital/icon.png',
+        name: 'Buidly Staking',
+        url: '#',
+        icon: 'https://tools.multiversx.com/assets-cdn/identities/galaxyone/icon.png',
+    },
+    {
+        category: Category.staking,
+        name: 'Easy 2 Stake',
+        url: 'https://easy2stake.com',
+        icon: 'https://tools.multiversx.com/assets-cdn/identities/easy2stake/icon.png',
     },
     {
         category: Category.staking,
@@ -412,27 +418,15 @@ export const projects: ProjectType[] = [
     },
     {
         category: Category.staking,
-        name: 'Raf Staking',
-        url: 'www.rafstaking.com',
-        icon: 'https://tools.multiversx.com/assets-cdn/identities/rafstakeagency/icon.png',
-    },
-    {
-        category: Category.staking,
-        name: 'KryptoDots️',
-        url: 'https://kryptodots.com/',
-        icon: 'https://tools.multiversx.com/assets-cdn/identities/kryptodots/icon.png',
-    },
-    {
-        category: Category.staking,
-        name: 'Buidly Staking',
-        url: '#',
-        icon: 'https://tools.multiversx.com/assets-cdn/identities/galaxyone/icon.png',
-    },
-    {
-        category: Category.staking,
         name: 'Octopos',
         url: 'https://multiversx.com/',
         icon: 'https://tools.multiversx.com/assets-cdn/identities/octopos/icon.png',
+    },
+    {
+        category: Category.staking,
+        name: 'D1fferent Capital',
+        url: 'https://d1fferent.capital/',
+        icon: 'https://tools.multiversx.com/assets-cdn/identities/d1fferentcapital/icon.png',
     },
     {
         category: Category.staking,
@@ -442,39 +436,21 @@ export const projects: ProjectType[] = [
     },
     {
         category: Category.staking,
-        name: '🌍 Chief Engineer Staking⚓',
-        url: 'https://t.me/chiefengineerstaking',
-        icon: 'https://tools.multiversx.com/assets-cdn/identities/chiefeng/icon.png',
-    },
-    {
-        category: Category.staking,
         name: 'CryptoBay',
         url: 'https://cryptobay.space',
         icon: 'https://tools.multiversx.com/assets-cdn/identities/cryptobayspace/icon.png',
     },
     {
         category: Category.staking,
-        name: 'BOBER Battle',
-        url: 'https://boberbattle.com/',
-        icon: 'https://tools.multiversx.com/assets-cdn/identities/bober-battle/icon.png',
-    },
-    {
-        category: Category.staking,
-        name: 'Equilibrium',
-        url: '#',
-        icon: 'https://tools.multiversx.com/assets-cdn/identities/equilibrium/icon.png',
+        name: '🌍 Chief Engineer Staking⚓',
+        url: 'https://t.me/chiefengineerstaking',
+        icon: 'https://tools.multiversx.com/assets-cdn/identities/chiefeng/icon.png',
     },
     {
         category: Category.staking,
         name: 'Hyperblocks Pro',
         url: 'https://hyperblocks.pro/',
         icon: 'https://tools.multiversx.com/assets-cdn/identities/hyperblockspro/icon.png',
-    },
-    {
-        category: Category.staking,
-        name: 'Ledger by Figment',
-        url: 'https://figment.io',
-        icon: 'https://tools.multiversx.com/assets-cdn/identities/ledgerbyfigment/icon.png',
     },
     {
         category: Category.staking,
@@ -496,9 +472,15 @@ export const projects: ProjectType[] = [
     },
     {
         category: Category.staking,
-        name: 'Pulsar Money',
+        name: 'Raf Staking',
+        url: 'https://www.rafstaking.com',
+        icon: 'https://tools.multiversx.com/assets-cdn/identities/rafstakeagency/icon.png',
+    },
+    {
+        category: Category.staking,
+        name: 'Equilibrium',
         url: '#',
-        icon: 'https://tools.multiversx.com/assets-cdn/identities/pulsarmoney/icon.png',
+        icon: 'https://tools.multiversx.com/assets-cdn/identities/equilibrium/icon.png',
     },
     {
         category: Category.staking,
@@ -514,12 +496,6 @@ export const projects: ProjectType[] = [
     },
     {
         category: Category.staking,
-        name: 'Wavenode | MultiversX APR + Edia Airdrops',
-        url: 'https://x.com/wavenodeValid',
-        icon: 'https://tools.multiversx.com/assets-cdn/identities/wavenodevalidat/icon.png',
-    },
-    {
-        category: Category.staking,
         name: 'EGLDSqueeze',
         url: '#',
         icon: 'https://tools.multiversx.com/assets-cdn/identities/egldsqueeze/icon.png',
@@ -532,12 +508,6 @@ export const projects: ProjectType[] = [
     },
     {
         category: Category.staking,
-        name: 'NTH Inc',
-        url: 'https://nthinc.ro',
-        icon: 'https://tools.multiversx.com/assets-cdn/identities/nethus/icon.png',
-    },
-    {
-        category: Category.staking,
         name: '01node',
         url: 'https://01node.com',
         icon: 'https://tools.multiversx.com/assets-cdn/identities/01node/icon.png',
@@ -545,7 +515,7 @@ export const projects: ProjectType[] = [
     {
         category: Category.staking,
         name: 'Rarity.market NFT marketplace',
-        url: 'rarity.market',
+        url: 'https://rarity.market',
         icon: 'https://tools.multiversx.com/assets-cdn/identities/rarity-market/icon.png',
     },
     {
@@ -568,9 +538,9 @@ export const projects: ProjectType[] = [
     },
     {
         category: Category.staking,
-        name: 'FriendsStaking',
-        url: '#',
-        icon: 'https://tools.multiversx.com/assets-cdn/identities/friendsstaking/icon.png',
+        name: 'NTH Inc',
+        url: 'https://nthinc.ro',
+        icon: 'https://tools.multiversx.com/assets-cdn/identities/nethus/icon.png',
     },
     {
         category: Category.staking,
@@ -580,9 +550,9 @@ export const projects: ProjectType[] = [
     },
     {
         category: Category.staking,
-        name: 'Trust Staking Switzerland',
-        url: 'https://truststaking.com',
-        icon: 'https://tools.multiversx.com/assets-cdn/identities/truststakingsw/icon.png',
+        name: 'Wavenode | MultiversX APR + Edia Airdrops',
+        url: 'https://x.com/wavenodeValid',
+        icon: 'https://tools.multiversx.com/assets-cdn/identities/wavenodevalidat/icon.png',
     },
     {
         category: Category.staking,
@@ -598,9 +568,21 @@ export const projects: ProjectType[] = [
     },
     {
         category: Category.staking,
+        name: 'Pi Staking',
+        url: '#',
+        icon: 'https://tools.multiversx.com/assets-cdn/identities/pi-staking/icon.png',
+    },
+    {
+        category: Category.staking,
         name: 'Shire Staking',
         url: 'https://multiversx.com',
         icon: 'https://tools.multiversx.com/assets-cdn/identities/omni1979/icon.png',
+    },
+    {
+        category: Category.staking,
+        name: 'FriendsStaking',
+        url: '#',
+        icon: 'https://tools.multiversx.com/assets-cdn/identities/friendsstaking/icon.png',
     },
     {
         category: Category.staking,
@@ -610,21 +592,27 @@ export const projects: ProjectType[] = [
     },
     {
         category: Category.staking,
+        name: 'Poker Staking',
+        url: '#',
+        icon: 'https://tools.multiversx.com/assets-cdn/identities/pokerstaking/icon.png',
+    },
+    {
+        category: Category.staking,
         name: 'Nic Staking',
         url: '#',
         icon: 'https://tools.multiversx.com/assets-cdn/identities/nictherick/icon.png',
     },
     {
         category: Category.staking,
-        name: 'Dappmed Poland',
+        name: 'Eda',
         url: '#',
-        icon: 'https://tools.multiversx.com/assets-cdn/identities/imsm/icon.png',
+        icon: 'https://tools.multiversx.com/assets-cdn/identities/kevinlallement/icon.png',
     },
     {
         category: Category.staking,
-        name: 'Transylvania Staking',
+        name: 'Dappmed Poland',
         url: '#',
-        icon: 'https://tools.multiversx.com/assets-cdn/identities/trstaking/icon.png',
+        icon: 'https://tools.multiversx.com/assets-cdn/identities/imsm/icon.png',
     },
     {
         category: Category.staking,
@@ -658,9 +646,21 @@ export const projects: ProjectType[] = [
     },
     {
         category: Category.staking,
+        name: 'StakeNEST',
+        url: 'https://stakenest.io',
+        icon: 'https://tools.multiversx.com/assets-cdn/identities/stakenest/icon.png',
+    },
+    {
+        category: Category.staking,
         name: 'Trust Staking Netherlands',
         url: 'https://truststaking.com',
         icon: 'https://tools.multiversx.com/assets-cdn/identities/truststakingne/icon.png',
+    },
+    {
+        category: Category.staking,
+        name: 'Pulsar Money',
+        url: '#',
+        icon: 'https://tools.multiversx.com/assets-cdn/identities/pulsarmoney/icon.png',
     },
     {
         category: Category.staking,
@@ -670,9 +670,9 @@ export const projects: ProjectType[] = [
     },
     {
         category: Category.staking,
-        name: 'Eda',
-        url: '#',
-        icon: 'https://tools.multiversx.com/assets-cdn/identities/kevinlallement/icon.png',
+        name: 'Figment',
+        url: 'https://figment.io',
+        icon: 'https://tools.multiversx.com/assets-cdn/identities/figment-networks/icon.png',
     },
     {
         category: Category.defi,
